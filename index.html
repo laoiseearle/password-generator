@@ -13,6 +13,66 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <main>
+      <div class="content-wrapper">
+        <div class="title">
+          <h1>Password Generator</h1>
+        </div>
+
+        <div class="password">
+          <p id="passwordText">P4$5W0rD!</p>
+          <p>COPIED</p>
+          <img src="images/icon-copy.svg" alt="" />
+        </div>
+
+        <div class="options">
+          <div class="character-length">
+            <p>Character Length</p>
+            <label for="char-length" id="charSlider">10</label>
+            <input type="range" name="char-length" id="passwordLength" />
+          </div>
+
+          <div class="checkboxes">
+            <div class="checkbox-item">
+              <input type="checkbox" name="uppercase" id="checkboxUppercase" />
+              <label for="uppercase">Include Uppercase Letters</label>
+            </div>
+
+            <div class="checkbox-item">
+              <input type="checkbox" name="lowercase" id="checkboxLowercase" />
+              <label for="lowercase">Include Lowercase Letters</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" name="numbers" id="checkboxNumbers" />
+              <label for="numbers">Include Numbers</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" name="symbols" id="checkboxSymbols" />
+              <label for="uppercase">Include Symbols</label>
+            </div>
+          </div>
+
+          <div class="password-strength">
+            <p>Strength</p>
+
+            <div class="strength-rating">
+              <p>Medium</p>
+
+              <div class="strength-bars">
+                <div class="strength-bar"></div>
+                <div class="strength-bar"></div>
+                <div class="strength-bar"></div>
+                <div class="strength-bar"></div>
+              </div>
+            </div>
+          </div>
+
+          <button>
+            <img src="images/icon-arrow-right.svg" alt="" /> Generate
+          </button>
+        </div>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
