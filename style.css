@@ -4,4 +4,254 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* -------- Font sizes -------- */
+
+html {
+  font-size: 16px;
+}
+
+.title h1,
+.character-length p,
+.checkbox-item label,
+button {
+  font-size: 1rem;
+}
+
+.password p {
+  font-size: 1.5rem;
+}
+
+.copy-text p {
+  font-size: 0.75rem;
+}
+
+.character-length label {
+  font-size: 1.5rem;
+}
+
+.strength-rating p {
+  font-size: 1.125rem;
+}
+
+/* -------- Background Colors -------- */
+
+html {
+  background-color: #18171f;
+}
+
+.options {
+  background-color: #24232c;
+}
+
+.password {
+  background-color: #24232c;
+}
+
+.password-strength {
+  background-color: #18171f;
+}
+
+.slider {
+  background: linear-gradient(90deg, #a4ffaf 50%, #18171f 50%);
+}
+
+.slider::-webkit-slider-thumb {
+  background-color: #e6e5ea;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background-color: #18171f;
+}
+
+.checkbox-item input:checked {
+  background: url(images/icon-check.svg) #a4ffaf;
+}
+
+button {
+  background-color: #a4ffaf;
+}
+/* -------- Font Colors -------- */
+
+html {
+  color: #e6e5ea;
+}
+
+.title h1 {
+  color: #817d92;
+}
+
+.copy-text p {
+  color: #a4ffaf;
+}
+
+.character-length label {
+  color: #a4ffaf;
+}
+
+.password-strength p {
+  color: #817d92;
+}
+
+.strength-rating p {
+  color: #e6e5ea;
+}
+
+/* -------- Images -------- */
+
+.copy-text img {
+  width: 17.5px;
+  height: 20px;
+}
+
+/* -------- Password -------- */
+
+.content-wrapper {
+  width: 100%;
+  max-width: 540px;
+  padding: 0 1rem;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.title h1 {
+  text-align: center;
+}
+
+.password {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.copy-text {
+  display: flex;
+  align-items: center;
+}
+
+.copy-text p {
+  display: none;
+  padding-right: 1rem;
+}
+
+/* -------- Options -------- */
+.options {
+  padding: 1rem;
+}
+
+.character-length {
+  position: relative;
+  padding-top: 0.3rem;
+  margin-bottom: 2.2rem;
+}
+
+.character-length p {
+  margin-bottom: 0.4rem;
+}
+
+.character-length label {
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.slider {
+  margin-top: 1rem;
+  width: 100%;
+  height: 8px;
+  appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  border: 2px solid #a4ffaf;
+}
+
+.checkboxes {
+  margin-bottom: 2rem;
+}
+
+.checkbox-item {
+  margin-top: 0.888rem;
+}
+
+.checkbox-item input {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e6e5ea;
+  appearance: none;
+  vertical-align: middle;
+  margin-right: 0.75rem;
+}
+
+.checkbox-item input:checked {
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox-item label {
+  vertical-align: middle;
+}
+
+/* -------- Password Strength -------- */
+
+.password-strength {
+  position: relative;
+  padding: 1rem;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+
+.strength-rating {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  padding-right: 0.5rem;
+  align-items: center;
+}
+
+.strength-rating p {
+  padding-right: 1rem;
+}
+
+.strength-bars {
+  display: flex;
+}
+
+.strength-bar {
+  width: 10px;
+  height: 28px;
+  border: 2px solid white;
+  margin-right: 0.5rem;
+}
+
+button {
+  position: relative;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  border: none;
+}
+
+button img {
+  margin-left: 0.5rem;
 }

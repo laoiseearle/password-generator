@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="shortcut icon"
       href="images/favicon-32x32.png"
@@ -20,16 +26,26 @@
         </div>
 
         <div class="password">
-          <p id="passwordText">P4$5W0rD!</p>
-          <p>COPIED</p>
-          <img src="images/icon-copy.svg" alt="" />
+          <p id="passwordText">PTx1f5DaFX</p>
+
+          <div class="copy-text">
+            <p>COPIED</p>
+            <img src="images/icon-copy.svg" alt="" />
+          </div>
         </div>
 
         <div class="options">
           <div class="character-length">
             <p>Character Length</p>
             <label for="char-length" id="charSlider">10</label>
-            <input type="range" name="char-length" id="passwordLength" />
+            <input
+              class="slider"
+              type="range"
+              name="char-length"
+              id="sliderRange"
+              min="0"
+              max="20"
+            />
           </div>
 
           <div class="checkboxes">
@@ -68,7 +84,8 @@
           </div>
 
           <button>
-            <img src="images/icon-arrow-right.svg" alt="" /> Generate
+            Generate
+            <img src="images/icon-arrow-right.svg" alt="" />
           </button>
         </div>
       </div>
