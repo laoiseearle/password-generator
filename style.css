@@ -44,7 +44,7 @@ button {
 /* -------- Background Colors -------- */
 
 html {
-  background-color: #18171f;
+  background-color: #08070b;
 }
 
 .options {
@@ -78,6 +78,16 @@ html {
 button {
   background-color: #a4ffaf;
 }
+
+button:hover {
+  background-color: #24232c;
+}
+
+button:hover img {
+  filter: brightness(0) saturate(100%) invert(86%) sepia(32%) saturate(469%)
+    hue-rotate(66deg) brightness(102%) contrast(101%);
+}
+
 /* -------- Font Colors -------- */
 
 html {
@@ -106,6 +116,10 @@ html {
 
 button {
   color: #18171f;
+}
+
+button:hover {
+  color: #a4ffaf;
 }
 
 /* -------- Images -------- */
@@ -146,6 +160,7 @@ button {
 .copy-text {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .copy-text p {
@@ -264,6 +279,11 @@ button {
   text-transform: uppercase;
   border: none;
   font-weight: 700;
+}
+
+button:hover {
+  border: 2px solid #a4ffaf;
+  cursor: pointer;
 }
 
 button img {
