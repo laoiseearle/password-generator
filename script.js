@@ -119,5 +119,3 @@ const copyTextToClipboard = () => {
   navigator.clipboard.writeText(passwordText.innerText);
   copyText.classList.add('show-text');
 };
-
-setStrengthBars();
