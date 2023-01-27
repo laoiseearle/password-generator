@@ -127,6 +127,7 @@ button:hover {
 .copy-text img {
   width: 17.5px;
   height: 20px;
+  cursor: pointer;
 }
 
 /* -------- Password -------- */
@@ -160,12 +161,20 @@ button:hover {
 .copy-text {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 
 .copy-text p {
-  display: none;
+  display: hidden;
+  opacity: 0;
   padding-right: 1rem;
+  user-select: none;
+  transition: 0.2s all ease;
+}
+
+.show-text p {
+  display: block;
+  transition: 0.2s all ease;
+  opacity: 1;
 }
 
 /* -------- Options -------- */
@@ -343,6 +352,10 @@ button img {
 
   .title {
     margin-bottom: 2rem;
+  }
+
+  .copy-text p {
+    padding-right: 0.5rem;
   }
 
   .password {

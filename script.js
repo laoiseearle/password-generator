@@ -4,6 +4,7 @@ const sliderLabel = document.getElementById('charSlider');
 
 // Password
 const passwordText = document.getElementById('passwordText');
+const copyText = document.getElementById('copyText');
 
 // Checkboxes
 const upperCase = document.getElementById('checkboxUppercase');
@@ -37,6 +38,7 @@ const randomPassword = max => {
 };
 
 const generatePassword = () => {
+  copyText.classList.remove('show-text');
   let charLength = sliderLabel.innerText;
 
   if (charLength === '0') {
@@ -47,4 +49,9 @@ const generatePassword = () => {
 
   passwordText.style.opacity = '1';
   passwordText.innerText = randomPassword(charLength);
+};
+
+const copyTextToClipboard = () => {
+  navigator.clipboard.writeText(passwordText.innerText);
+  copyText.classList.add('show-text');
 };
